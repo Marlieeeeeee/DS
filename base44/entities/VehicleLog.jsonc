@@ -1,0 +1,39 @@
+{
+  "name": "VehicleLog",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "log_type": {
+      "type": "string",
+      "enum": [
+        "fuel",
+        "service"
+      ]
+    },
+    "amount_paid": {
+      "type": "number"
+    },
+    "odometer": {
+      "type": "number"
+    },
+    "fuel_volume": {
+      "type": "number"
+    },
+    "full_tank": {
+      "type": "boolean"
+    },
+    "service_type": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "log_type",
+    "amount_paid"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Feedback",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "feedback",
+        "bug"
+      ]
+    },
+    "message": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "reviewing",
+        "fixing",
+        "resolved"
+      ],
+      "default": "new"
+    },
+    "device_info": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "type",
+    "message"
+  ]
+}

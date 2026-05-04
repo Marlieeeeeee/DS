@@ -1,0 +1,63 @@
+{
+  "name": "MarketListing",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "condition": {
+      "type": "string",
+      "enum": [
+        "New",
+        "Like New",
+        "Good",
+        "Fair"
+      ]
+    },
+    "category": {
+      "type": "string"
+    },
+    "sub_category": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "seller_name": {
+      "type": "string"
+    },
+    "seller_email": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "compatible_vehicle": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending_approval",
+        "live",
+        "suspended",
+        "featured"
+      ],
+      "default": "pending_approval"
+    },
+    "km_driven": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "price",
+    "status"
+  ]
+}
